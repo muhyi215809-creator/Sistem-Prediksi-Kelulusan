@@ -1,32 +1,27 @@
-Sistem Prediksi Kelulusan Mahasiswa
+# Sistem Prediksi Kelulusan Mahasiswa
 
-Deskripsi
+## Deskripsi
 
 Sistem Prediksi Kelulusan Mahasiswa merupakan aplikasi berbasis web sederhana yang dibuat menggunakan Python dan Streamlit. Aplikasi ini digunakan untuk memprediksi status kelulusan mahasiswa berdasarkan data IPK dan total SKS yang dimasukkan oleh pengguna.
 
-Tujuan
+## Tujuan
 
 Membangun aplikasi prediksi kelulusan mahasiswa dengan menerapkan arsitektur 4 layer, yaitu View Layer, Service Layer, Repository Layer, dan Model Layer.
 
-Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
-Python
+- Python
+- Streamlit
+- SQLAlchemy
+- SQLite
+- Pandas
+- Python Dotenv
 
-Streamlit
+## Struktur Proyek
 
-SQLAlchemy
-
-SQLite
-
-Pandas
-
-Python Dotenv
-
-Struktur Proyek
-
+```text
 Sistem-Prediksi-Kelulusan/
 ├── app.py
-├── .env
 ├── .gitignore
 ├── requirements.txt
 ├── models/
@@ -35,40 +30,43 @@ Sistem-Prediksi-Kelulusan/
 │   └── repository.py
 └── services/
     └── service.py
+```
 
-Fitur Aplikasi
+## Fitur Aplikasi
 
-Input nama mahasiswa.
+- Input nama mahasiswa.
+- Input IPK.
+- Input total SKS.
+- Menampilkan hasil prediksi kelulusan.
+- Menyimpan data prediksi.
+- Menampilkan riwayat prediksi.
 
-Input IPK.
+## Cara Menjalankan Aplikasi
 
-Input total SKS.
+**1. Clone repository**
 
-Menampilkan hasil prediksi kelulusan.
+```bash
+git clone https://github.com/muhyi215809-creator/Sistem-Prediksi-Kelulusan.git
+```
 
-Menyimpan data prediksi.
+**2. Masuk ke folder proyek**
 
-Menampilkan riwayat prediksi.
-
-Cara Menjalankan Aplikasi
-
-Clone repository:
-
-git clone 
-https://github.com/muhyi215809-creator/Sistem-Prediksi-Kelulusan.git
-
-Masuk ke folder proyek:
-
+```bash
 cd Sistem-Prediksi-Kelulusan
+```
 
-Instal dependensi:
+**3. Instal dependensi**
 
+```bash
 pip install -r requirements.txt
+```
 
-Jalankan aplikasi:
+**4. Jalankan aplikasi**
 
+```bash
 python -m streamlit run app.py
+```
 
-Database
+## Database
 
 Aplikasi menggunakan SQLite sebagai database dan SQLAlchemy untuk mengelola interaksi dengan database.
