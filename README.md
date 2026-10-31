@@ -54,7 +54,8 @@ Cara Menjalankan Aplikasi
 
 Clone repository:
 
-git clone https://github.com/muhyi215809-creator/Sistem-Prediksi-Kelulusan.git
+git clone 
+https://github.com/muhyi215809-creator/Sistem-Prediksi-Kelulusan.git
 
 Masuk ke folder proyek:
 
